@@ -83,19 +83,20 @@ class DataAccessLayer
             $annonce = new Annonce();
             $annonce->setIdAnnonce($row['id_annonce']);
             $annonce->setTitleAnnonce($row['title_annonce']);
-            $annonce->setIdGarage($row['Name_Garage']);
+            $annonce->setNameGarage($row['name_garage']);
             $annonce->setDecription($row['description']);
             $annonce->setKilometer($row['kilometer']);
             $annonce->setColor($row['color']);
             $annonce->setPrice($row['price']);
             $annonce->setMotor($row['motor']);
-            $annonce->setIdFuelType($row['Fuel_Type']);
-            $annonce->setIdModel($row['Model']);
-            $annonce->setIdFinish($row['Finition']);
+            $annonce->setFuelType($row['fuel_type']);
+            $annonce->setModel($row['model']);
+            $annonce->setBrand($row['brand']);
+            $annonce->setFinish($row['finish']);
             $annonce->setYearOfCirculation($row['year_of_circulation']);
             $annonce->setCreationDateAnnonce($row['creation_date_annonce']);
             $annonce->setDateSell($row['date_sell']);
-            $annonce->setIdGearType($row['Type_Boite']);
+            $annonce->setGearType($row['type_boite']);
 
             $annonces[] = $annonce;
         }

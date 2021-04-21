@@ -6,38 +6,40 @@ class Annonce implements \JsonSerializable
 {
     private $idAnnonce;
     private $titleAnnonce;
-    private $idGarage;
+    private $nameGarage;
     private $decription;
     private $kilometer;
     private $color;
     private $price;
     private $motor;
-    private $idFuelType;
-    private $idModel;
-    private $idFinish;
+    private $fuelType;
+    private $model;
+    private $brand;
+    private $finish;
     private $yearOfCirculation;
     private $creationDateAnnonce;
     private $dateSell;
-    private $idGearType;
+    private $gearType;
 
     public function toArray()
     {
         return [
             'idAnnonce' => $this->idAnnonce,
             'titleAnnonce' => $this->titleAnnonce,
-            'idGarage' => $this->idGarage,
+            'nameGarage' => $this->nameGarage,
             'decription' => $this->decription,
             'kilometer' => $this->kilometer,
             'color' => $this->color,
             'price' => $this->price,
             'motor' => $this->motor,
-            'idFuelType' => $this->idFuelType,
-            'idModel' => $this->idModel,
-            'idFinish' => $this->idFinish,
+            'fuelType' => $this->fuelType,
+            'model' => $this->model,
+            'brand' => $this->brand,
+            'finish' => $this->finish,
             'yearOfCirculation' => $this->yearOfCirculation,
             'creationDateAnnonce' => $this->creationDateAnnonce,
             'dateSell' => $this->dateSell,
-            'idGearType' => $this->idGearType,
+            'gearType' => $this->gearType,
         ];
     }
 
@@ -87,21 +89,21 @@ class Annonce implements \JsonSerializable
     }
 
     /**
-     * Get the value of idGarage
+     * Get the value of nameGarage
      */ 
-    public function getIdGarage()
+    public function getNameGarage()
     {
-        return $this->idGarage;
+        return $this->nameGarage;
     }
 
     /**
-     * Set the value of idGarage
+     * Set the value of nameGarage
      *
      * @return  self
      */ 
-    public function setIdGarage($idGarage)
+    public function setNameGarage($nameGarage)
     {
-        $this->idGarage = $idGarage;
+        $this->nameGarage = $nameGarage;
 
         return $this;
     }
@@ -207,41 +209,41 @@ class Annonce implements \JsonSerializable
     }
 
     /**
-     * Get the value of idModel
+     * Get the value of model
      */ 
-    public function getIdModel()
+    public function getModel()
     {
-        return $this->idModel;
+        return $this->model;
     }
 
     /**
-     * Set the value of idModel
+     * Set the value of model
      *
      * @return  self
      */ 
-    public function setIdModel($idModel)
+    public function setModel($model)
     {
-        $this->idModel = $idModel;
+        $this->model = $model;
 
         return $this;
     }
 
     /**
-     * Get the value of idFinish
+     * Get the value of finish
      */ 
-    public function getIdFinish()
+    public function getFinish()
     {
-        return $this->idFinish;
+        return $this->finish;
     }
 
     /**
-     * Set the value of idFinish
+     * Set the value of finish
      *
      * @return  self
      */ 
-    public function setIdFinish($idFinish)
+    public function setFinish($finish)
     {
-        $this->idFinish = $idFinish;
+        $this->finish = $finish;
 
         return $this;
     }
@@ -308,41 +310,61 @@ class Annonce implements \JsonSerializable
     }
 
     /**
-     * Get the value of idGearType
+     * Get the value of gearType
      */ 
-    public function getIdGearType()
+    public function getGearType()
     {
-        return $this->idGearType;
+        return $this->gearType;
     }
 
     /**
-     * Set the value of idGearType
+     * Set the value of gearType
      *
      * @return  self
      */ 
-    public function setIdGearType($idGearType)
+    public function setGearType($gearType)
     {
-        $this->idGearType = $idGearType;
+        $this->gearType = $gearType;
 
         return $this;
     }
 
     /**
-     * Get the value of idFuelType
+     * Get the value of fuelType
      */ 
-    public function getIdFuelType()
+    public function getFuelType()
     {
-        return $this->idFuelType;
+        return $this->fuelType;
     }
 
     /**
-     * Set the value of idFuelType
+     * Set the value of fuelType
      *
      * @return  self
      */ 
-    public function setIdFuelType($idFuelType)
+    public function setFuelType($fuelType)
     {
-        $this->idFuelType = $idFuelType;
+        $this->fuelType = $fuelType;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of brand
+     */ 
+    public function getBrand()
+    {
+        return $this->brand;
+    }
+
+    /**
+     * Set the value of brand
+     *
+     * @return  self
+     */ 
+    public function setBrand($brand)
+    {
+        $this->brand = $brand;
 
         return $this;
     }

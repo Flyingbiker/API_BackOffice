@@ -24,6 +24,7 @@ class AnnonceController {
         $data = $this->dal->selectAllAnnonces();
 
         header('Content-Type: Application/json');
+        header('Access-Control-Allow-Origin: *');
         echo json_encode($data);
     }    
 

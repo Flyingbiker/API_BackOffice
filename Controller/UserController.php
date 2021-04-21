@@ -24,6 +24,7 @@ class UserController {
         $data = $this->dal->selectAllUsers();
 
         header('Content-Type: Application/json');
+        header('Access-Control-Allow-Origin: *');
         echo json_encode($data);
     }    
 
